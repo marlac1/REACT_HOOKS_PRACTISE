@@ -50,6 +50,7 @@ const FetchData = () => {
       <button type="button" onClick={changeUrl}>
         Search
       </button>
+      {isError && <div>Error ...</div>}
       {isLoading ? (
         <div>Loading ...</div>
       ) : (
