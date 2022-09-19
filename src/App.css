@@ -10,13 +10,15 @@
   text-decoration: none;
 }
 
-.App-logo {
+.App-logo,
+.spinner {
   height: 5vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo,
+  .spinner {
     animation: App-logo-spin infinite 20s linear;
   }
 }

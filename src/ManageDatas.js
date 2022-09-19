@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FetchDataCustomHook from "./FetchDataCustomHook";
+import spinner from "./spinner.svg";
 const ManageDatas = () => {
   const [query, setQuery] = useState("redux");
   const [{ data, isLoading, isError }, setUrl] = FetchDataCustomHook(
@@ -26,7 +27,10 @@ const ManageDatas = () => {
 
       {isError && <div>Error ...</div>}
       {isLoading ? (
-        <div>Loading ...</div>
+        <div>
+          {" "}
+          Loading ... <img src={spinner} className="spinner" alt="spinner" />
+        </div>
       ) : (
         <ul>
           {data.hits.map((item) => (

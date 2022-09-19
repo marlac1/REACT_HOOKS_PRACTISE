@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import spinner from "./spinner.svg";
 const axios = require("axios").default;
 
 const FetchDataCustomHook = (initialUrl, initialData) => {
