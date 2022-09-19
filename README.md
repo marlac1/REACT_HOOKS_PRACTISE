@@ -1,4 +1,4 @@
-The purpose of this project is to build step by step a custom fetching data hook using useEffect() React hook.
+The purpose of this project is to build step by step a custom fetching data hook using useEffect() React hook. </br>
 FetchDataCustomHook component is called by ManageDatas component, rendered by App component.
 The custom hooks has url and data initial states as generic props, which will be precised by ManageDatas.
 The aim is to reuse this custom hook, as it deals with query, url, loading and error issues.
