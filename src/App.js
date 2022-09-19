@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Effect from "./Effect";
-import ChatApi from "./ChatApi";
+
 import ManageState from "./ManageState";
 import ManageEffect from "./ManageEffect";
-import FetchData from "./FetchData";
+
+import ManageDatas from "./ManageDatas";
 const App = () => {
   return (
     <div className="App">
@@ -22,14 +22,12 @@ const App = () => {
       >
         HERE
       </a>
-      {/* <Effect /> */}
       <ManageState />
       <ManageEffect />
       <div className="fetchdata">
         <br />
-        <FetchData />
+        <ManageDatas />
       </div>
-      {/* <ChatApi /> */}
     </div>
   );
 };
