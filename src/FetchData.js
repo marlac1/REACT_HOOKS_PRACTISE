@@ -8,14 +8,19 @@ const FetchData = () => {
   const [url, setUrl] = useState(
     "https://hn.algolia.com/api/v1/search?query=redux"
   );
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsError(false);
       setIsLoading(true);
-      const result = await axios(
-        `http://hn.algolia.com/api/v1/search?query=${query}`
-      );
-      setData(result.data);
+
+      try {
+        const result = await axios(url);
+        setData(result.data);
+      } catch (error) {
+        setIsError(true);
+      }
       setIsLoading(false);
     };
     fetchData();
