@@ -1,7 +1,7 @@
 The purpose of this project is to build step by step a custom fetching data hook using useEffect() React hook. </br>
-FetchDataCustomHook component is called by ManageDatas component, rendered by App component.
-The custom hooks has url and data initial states as generic props, which will be precised by ManageDatas.
-The aim is to reuse this custom hook, as it deals with query, url, loading and error issues.
+FetchDataCustomHook component is called by ManageDatas component, rendered by App component. </br>
+The custom hooks has url and data initial states as generic props, which will be precised by ManageDatas. </br>
+The aim is to reuse this custom hook, as it deals with query, url, loading and error issues. </br>
 View documentation there : [https://www.robinwieruch.de/react-hooks-fetch-data/?fbclid=IwAR1G4cevs_ZseJMrqRCl3oH8eV9e7dTl4krXqr4jmhCO_MpBfJrn0rKkDoM](https://www.robinwieruch.de/react-hooks-fetch-data/?fbclid=IwAR1G4cevs_ZseJMrqRCl3oH8eV9e7dTl4krXqr4jmhCO_MpBfJrn0rKkDoM).
 
 # Getting Started with Create React App
