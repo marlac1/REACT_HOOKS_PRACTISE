@@ -33,7 +33,7 @@ const ManageDatas = () => {
         </div>
       ) : (
         <ul>
-          {data.hits.map((item) => (
+          {data.hits.slice(0, 3).map((item) => (
             <li key={item.objectID}>
               <a href={item.url}>{item.title}</a>
             </li>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import spinner from "./spinner.svg";
+
 const axios = require("axios").default;
 
 const FetchDataCustomHook = (initialUrl, initialData) => {
@@ -24,7 +24,8 @@ const FetchDataCustomHook = (initialUrl, initialData) => {
     };
     fetchData();
   }, [url]);
-
+  //console.log(data);
+  //const slicedArray = data.slice(0, 5);
   return [{ data, isLoading, isError }, setUrl];
 };
 

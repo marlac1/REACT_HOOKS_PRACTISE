@@ -4,7 +4,8 @@
 /src/ChatApis.js
 /src/Draft.js
 /src/Effect.js
-
+/src/TodoReducer.js
+/src/TrySpreadOperator.js
 # dependencies
 /node_modules
 /.pnp
